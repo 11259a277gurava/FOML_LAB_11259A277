@@ -21,7 +21,7 @@ result = forest.predict(new_tumour)[0]
 print("Diagnosis:", names[result]) 
 
 import matplotlib.pyplot as plt         
-importances = model.feature_importances_      
+importances = forest.feature_importances_      
 names = data.feature_names
 top = sorted(zip(importances, names), reverse=True)[:5] 
 vals = [t[0] for t in top]; labs = [t[1] for t in top]
