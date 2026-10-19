@@ -19,6 +19,6 @@ for round in range(2000):
 print("Training done. The agent has learned the path.")
 
 arrows = ["left", "down", "right", "up"]                
-for square in [0, 6, 10, 14]:                          '
+for square in [0, 6, 10, 14]:                          
     best = np.argmax(Q[square])                      
     print("From square", square, "-> best move:", arrows[best]) 
