@@ -15,4 +15,4 @@ print("Accuracy:", round(model.score(X_test, y_test), 3))
 
 new_patient = [X_test.iloc[0]]                          
 result = model.predict(new_patient)[0]                  
-print("Heart disease? (1=yes, 0=no):", result
+print("Heart disease? (1=yes, 0=no):", result)
